@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(174, 80, 66);
+    font-size: 1.5rem;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(251, 235, 172);
+}
+.wonders{
+    flex: 50%;
+    padding: 1%;
+    
+}
+
+.wonders p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+hr{
+    width:80%;
+    margin-inline: 10%;
+}
+
+.btn{
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 2.5%;
+    margin-bottom:3% ;
+    font-style: italic;
+    background-color: rgb(174, 80, 66);
+}
+
+.hidden-element {
+    display: none;
+}
+
+.btn:hover 
+.hidden-element {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 2%;
+    visibility: visible;
+    background-color: rgb(252, 205, 147);
+}
+
+.ImageSlider{
+    flex: 70%;
+    margin:1% ;
+    width:60%;
+    height:600px;
+    background-image: url();
+    background-size: 100% 100%;
+    box-shadow: 0px 8px 24px rgba(149,157,165,0.2);
+    animation: Imagechange 30s linear infinite ;
+}
+
+@keyframes Imagechange {
+    0%{
+        background-image: url("1.jpg");
+    }
+    20%{
+        background-image: url("2.jpg");
+    }
+    35%{
+        background-image: url("3.jpg");
+    }
+    55%{
+        background-image: url("4.jpg");
+    }
+    65%{
+        background-image: url("5.jpg");
+    }
+
+    80%{
+        background-image: url("6.jpg");
+    }
+
+    100%{
+        background-image: url("7.jpg");
+    }
+}
+
+.text h3{
+    margin: 1%;
+    margin-inline: 5%;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.text p{
+    font-size: 1.2rem;
+    margin-block: 1%;
+    margin-inline: 5%;
+}
